@@ -4,6 +4,7 @@
    --accent-color-1: #e4dfda;
    --accent-color-2: #c1666b;
    --padding: 30px;
+   
 }
 
 nav {
@@ -22,7 +23,7 @@ a {
 }
 
 main {
-    max-width: 840px;
+    max-width: 840px; /*Does this need to be bigger or the pictures don't fill the rest like the navigation does*/
 }
 .hero {
     position: relative;
@@ -86,7 +87,7 @@ header img {
     justify-self: flex-start;
     width: 140px;  
 }
-nav { /*Seems to wide*/
+nav { /*Seems to wide the  four link tags*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,16 +95,21 @@ nav { /*Seems to wide*/
     font-size: 1.2rem;
     margin: 0;
 }
-.history {
+.history  { /* Can't get the history to go into the center between the texts if I mess with one it messes with the other h2*/
     display: grid;
     grid-template-columns: auto 40% 1fr;
-    margin: 1rem auto ;
+    margin: 1rem auto;
+   /* text-align: center;
+    padding: 1rem;
+    font-size: 2.0rem; */
 }
 
-h2 {
+.adventure h2 { /* The h2 need to be bigger*/
     text-align: center;
     padding: 1rem;
     margin: 1rem auto;
+    font-size: 2.5rem;
+
 }
 figcaption {
     text-align: center;  
@@ -123,7 +129,7 @@ footer {
 }
 .sociallink {
     display: flex;
-    justify-content: flex-end; /*too close together*/
+    justify-content: flex-end; /*too close together need more spacing nothing works*/
     padding: 2rem;
     margin: 20px;
 
