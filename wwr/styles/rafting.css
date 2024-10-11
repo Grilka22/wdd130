@@ -10,7 +10,6 @@ nav {
    /* background-color:var(--primary-color);*/
     padding: var(--padding);
     color: var(--secondary-color); 
-    width: 200%; 
 }
 
 h2 {
@@ -39,6 +38,7 @@ h1 {
     text-align: center; 
     color: var(--accent-color-1);
     font-size: 40px;
+    font-family: Roboto; /* How to put in the chosen font*/
     position: absolute;
     padding: 1rem;
     left: 0;
@@ -68,12 +68,66 @@ article p {
     top: 0.5%;
     bottom: 0.5%;
 }
-
 p {
-    color: black; /* all the other text turns same color in the other paragraphs*/
+    color: black; 
     text-align: center;
     padding: 1rem;
 }
+header {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns:  120px 1fr;
+    grid-area: center;
+    border-bottom: 1px solid var(--accent-color-2);
+    max-width: none;
+}
+header img {
+    display: flex;
+    justify-self: flex-start;
+    width: 140px;  
+}
+nav { /*Seems to wide*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.history {
+    display: grid;
+    grid-template-columns: auto 40% 1fr;
+    margin: 1rem auto ;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+figcaption {
+    text-align: center;  
+}
+.figure_flex {
+    display: flex;
+}
+figure img {
+    width: 200px;
+}
+figure {
+    padding: 0;
+    margin: 10px;
+}
+footer {
+    text-align: center;
+}
+.sociallink {
+    display: flex;
+    justify-content: flex-end; /*too close together*/
+    padding: 2rem;
+    margin: 20px;
+
+}
 
 
-
+ 
