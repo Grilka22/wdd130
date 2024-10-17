@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 | HTML Form - User Poll</title>
+    <meta name="description" content="HTML Form | User Poll">
+    <meta name="author" content="Rachel Mannewitz">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,30 +18,39 @@
     <main>
 
     </main>
-    <form action="">
+    <form>
         <fieldset>
             <legend>Contact Information</legend>
+            <div class="form-item column2">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname">
-                <label for="useremail">Email</label>
+            </div>
+            <div class="form-item coulmn2">
+                <label for="useremail">Email:</label>
                 <input type="email" id="useremail" name="useremail">
+            </div>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
-            <label for="browser">What is your favorite browser?</label>
-            <select id="browser" name="browser">
-                <option value="chrome">Chrome</option>
-                <option value="edge">Edge</option>
-                <option value="safari">Safari</option>
-                <option value="firefox">Firefox</option>
-                <option value="wave">Wave</option>
-            </select>
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
+            <div class="form-item column1">
+                <label for="browser">What is your favorite browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="edge">Edge</option>
+                    <option value="safari">Safari</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="wave">Wave</option>
+                </select>
+            </div>
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
             
-            <label for="feedback">List the places you have lived:</label>
+            <label for="feedback">List the places you have lived:</label> <!--not centered over the text box-->
             <textarea name="feedback" id="feedback" rows="4" placeholder="Manhattan New York, London England, Moscow Russia"></textarea>
         </fieldset>
+
         <button type="submit">Submit Poll</button>
     </form>
     <footer>
