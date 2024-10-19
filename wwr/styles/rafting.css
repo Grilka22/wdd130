@@ -112,18 +112,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     position: inherit;
-    padding: 10%;
-    margin: 0 auto ;
-    width: auto;
+    padding: 5%;
+    margin: 1rem auto ;
     border:3px solid var(--primary-color);
     background-color: lightcyan;  
 }
 .employee h1 {
     text-align: center; 
     color: var(--accent-color-2);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     margin: 5%;
     padding: var(--padding);
@@ -134,7 +132,7 @@ nav {
 }
 .employee figure img {
     width: 100%;
-    margin:30px;
+    margin:10px;
 }
 
 .contact {
