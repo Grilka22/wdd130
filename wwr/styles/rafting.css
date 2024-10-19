@@ -129,23 +129,26 @@ nav {
     padding: var(--padding);
 }
 .employee figure {
-    padding: 0;
+    padding: 1rem;
     margin: 10px;
 }
 .employee figure img {
     width: 100%;
     margin:30px;
 }
+
 .contact {
     display: grid;
+    grid-template-columns: 1fr 2fr;
     background-color: lightcyan;
     border:3px solid var(--primary-color);
     margin:1%;
 }
 .contact h2 {
+    grid-column: 1/3;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem auto;
+    padding: 20px;
+    margin: 0 auto;
     font-style: oblique;
     font-size: 2.5rem;
     font-family: Roboto
@@ -247,13 +250,14 @@ figure {
     margin: 10px;
 }
 footer {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 .sociallink {
     display: flex;
     justify-content: flex-end; /*too close together need more spacing nothing works*/
-    padding: 2rem;
-    margin: 20px;
+    padding: 0;
+    margin: 10px;
 }
 
  
