@@ -91,7 +91,7 @@ header {
     margin: 1rem auto;
     grid-template-columns:  120px 1fr;
     grid-area: center;
-    border-bottom: 1px solid var(--accent-color-2);
+    border-bottom: 2px solid var(--accent-color-2);
     max-width: none;
 }
 header img {
@@ -107,6 +107,77 @@ nav {
     font-size: 1.2rem;
     margin: 0;
 }
+/*** Index Home Page***/
+
+.hero fieldset{
+    position: absolute;
+    float: right;
+    background-color: pink;
+    padding: 1rem;
+    margin: auto;
+}
+.travel {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin: auto;
+}
+/* Need to make the call to action button text black*/
+.travel img{
+    width: 70%;
+}
+.travel p {
+    font-size: 20px;
+}
+
+.newsletter  {
+    background-color: azure;
+
+}
+/***End of Home Index Page***/
+/*** Trips Page ***/
+
+.options {
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    background-color: var(--secondary-color);
+    
+    
+}
+
+table {
+    border: 6px solid var(--secondary-color);
+    border-collapse: collapse;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 1px;
+    width: 700px;
+    height: 120px;
+    text-align: center;
+    background-color: var(--primary-color);
+
+}
+      
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Roboto;
+}
+th,td,tr {
+    border:2px solid black
+    
+    
+
+}      
+      
+
+
+/*** End of Trip Page ***/
 /*** Contact Us Page ***/
 .employee {
     display: flex;
